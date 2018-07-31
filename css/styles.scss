@@ -12,7 +12,7 @@ $main_text_color: white;
     span {
         display: block;
         border-top: 1px solid; 
-        font-size: 60%;
+        font-size: 50%;
     }
 }
 
@@ -52,6 +52,16 @@ header {
 
 .palletes-cards {
     margin: 2em 2em 1em 2em;
+}
+
+footer {
+    min-height: 2em;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cf0404+5,ff3019+75 */
+    background: #cf0404; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #cf0404 5%, #ff3019 75%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #cf0404 5%,#ff3019 75%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #cf0404 5%,#ff3019 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .brd {
