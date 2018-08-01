@@ -12,6 +12,8 @@ var gulp = require('gulp'),
     flatmap = require('gulp-flatmap'),
     htmlmin = require('gulp-htmlmin');
 
+    var merge = require('merge-stream');
+
 
 gulp.task('sass', function () {
     return gulp.src('./css/*.scss')
@@ -35,17 +37,27 @@ gulp.task('copyfonts', function () {
 
 // Images
 gulp.task('imagemin', function () {
-    return gulp.src('img/*.{png,jpg,gif}')
+    var main_img = gulp.src('img/*.{png,jpg,gif}')
         .pipe(imagemin({
             optimizationLevel: 3,
             progressive: true,
             interlaced: true
         }))
         .pipe(gulp.dest('dist/img'));
+    
+    var products_img = gulp.src('img/poddony/*.{png,jpg,gif}')
+        .pipe(imagemin({
+            optimizationLevel: 3,
+            progressive: true,
+            interlaced: true
+        }))
+        .pipe(gulp.dest('dist/img/poddony'));
+
+    return merge(main_img,products_img);
 });
 
 gulp.task('usemin', function () {
-    return gulp.src('./*.html')
+    var dir1 = gulp.src('./*.html')
         .pipe(flatmap(function (stream, file) {
             return stream
                 .pipe(usemin({
@@ -61,6 +73,25 @@ gulp.task('usemin', function () {
                 }))
         }))
         .pipe(gulp.dest('dist/'));
+
+    var dir2 = gulp.src('./products/oblegchennyie/*.html')
+    .pipe(flatmap(function (stream, file) {
+        return stream
+            .pipe(usemin({
+                css: [rev()],
+                html: [function () {
+                    return htmlmin({
+                        collapseWhitespace: true
+                    })
+                }],
+                js: [uglify(), rev()],
+                inlinejs: [uglify()],
+                inlinecss: [cleanCss(), 'concat']
+            }))
+    }))
+    .pipe(gulp.dest('dist/products/oblegchennyie/'));
+
+    return merge(dir1,dir2);
 });
 
 gulp.task('build', ['clean'], function () {
