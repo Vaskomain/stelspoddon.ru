@@ -69,7 +69,8 @@ function getFolders (dir, files_){
         var name = dir + '/' + files[i];
         if (fs.statSync(name).isDirectory()){
             if (name.indexOf('products') > -1
-                || name.indexOf('contacts') > -1) 
+                || name.indexOf('contacts') > -1
+                || name.indexOf('services') > -1) 
                 files_.push(name);
             getFolders(name, files_);
         };
