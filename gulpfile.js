@@ -14,6 +14,10 @@ var gulp = require('gulp'),
 
     var merge = require('merge-stream');
 
+    var fs = require('fs');
+    var path = require('path');
+    
+
 
 gulp.task('sass', function () {
     return gulp.src('./css/*.scss')
@@ -37,7 +41,7 @@ gulp.task('copyfonts', function () {
 
 // Images
 gulp.task('imagemin', function () {
-    var main_img = gulp.src('img/*.{png,jpg,gif}')
+    var main_img = gulp.src('img/*')
         .pipe(imagemin({
             optimizationLevel: 3,
             progressive: true,
@@ -45,7 +49,7 @@ gulp.task('imagemin', function () {
         }))
         .pipe(gulp.dest('dist/img'));
     
-    var products_img = gulp.src('img/poddony/*.{png,jpg,gif}')
+    var products_img = gulp.src('img/poddony/*')
         .pipe(imagemin({
             optimizationLevel: 3,
             progressive: true,
@@ -55,6 +59,68 @@ gulp.task('imagemin', function () {
 
     return merge(main_img,products_img);
 });
+
+var htmlPath = '.';
+
+function getFolders (dir, files_){
+    files_ = files_ || [];
+    var files = fs.readdirSync(dir);
+    for (var i in files){
+        var name = dir + '/' + files[i];
+        if (fs.statSync(name).isDirectory()){
+            if (name.indexOf('products') > -1
+                || name.indexOf('contacts') > -1) 
+                files_.push(name);
+            getFolders(name, files_);
+        };
+    }
+    return files_;
+}
+
+gulp.task('usemin_all', function () {
+
+    var folders = getFolders(htmlPath);
+    console.log(folders);
+
+    var folders_min = folders.map(function(folder) {
+        return gulp.src(path.join(htmlPath,folder,'/*.html'))
+        .pipe(flatmap(function (stream, file) {
+            return stream
+                .pipe(usemin({
+                    css: [rev()],
+                    html: [function () {
+                        return htmlmin({
+                            collapseWhitespace: true
+                        })
+                    }],
+                    js: [uglify(), rev()],
+                    inlinejs: [uglify()],
+                    inlinecss: [cleanCss(), 'concat']
+                }))
+        }))
+        .pipe(gulp.dest('dist/'+folder));
+    });
+
+    var main_min = gulp.src(htmlPath+'/*.html')
+    .pipe(flatmap(function (stream, file) {
+        return stream
+            .pipe(usemin({
+                css: [rev()],
+                html: [function () {
+                    return htmlmin({
+                        collapseWhitespace: true
+                    })
+                }],
+                js: [uglify(), rev()],
+                inlinejs: [uglify()],
+                inlinecss: [cleanCss(), 'concat']
+            }))
+    }))
+    .pipe(gulp.dest('dist/'));
+
+    return merge(folders_min,main_min);
+});
+
 
 gulp.task('usemin', function () {
     var dir1 = gulp.src('./*.html')
@@ -95,7 +161,7 @@ gulp.task('usemin', function () {
 });
 
 gulp.task('build', ['clean'], function () {
-    gulp.start('copyfonts', 'imagemin', 'usemin');
+    gulp.start('copyfonts', 'imagemin', 'usemin_all');
 });
 
 gulp.task('browser-sync', function () {
