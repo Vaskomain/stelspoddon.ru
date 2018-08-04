@@ -63,103 +63,7 @@
             20 лет и предлагаем клиентам выгодные условия сотрудничества</h>
     </div>
 
-    <ul class="nav nav-pills ml-5 pt-3" id="products-pills" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" id="products-hits-tab" data-toggle="pill" href="#products-hits" role="tab" aria-controls="products-hits"
-                aria-selected="true">Хиты продаж</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="products-evroborta-tab" data-toggle="pill" href="#products-evroborta" role="tab" aria-controls="products-evroborta"
-                aria-selected="false">Евроборта</a>
-        </li>
-    </ul>
-
-    <div class="tab-content" id="products-pills-content">
-        <div class="tab-pane fade show active" id="products-hits" role="tabpanel" aria-labelledby="products-hits-tab">
-            <div class="card-deck palletes-cards pt-1 mt-0">
-                <div class="card">
-                    <img class="card-img-top" src="img/poddony/poddoni_evro_sort1_small.jpg" alt="Поддоны с евроклеймом 1 сорт">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Поддоны с евроклеймом
-                            <br>1 сорт</h5>
-                        <p class="card-text">
-                            <span>Размер:</span> 1200x800 мм
-                            <span>Грузоподъемность:</span> до 2500 кг</p>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-center">
-                            <span>Цена:</span> 290р за шт.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/poddony/1200_1000_s.jpg" alt="Поддоны 1200 х 1000 1 сорт">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Семидосочные поддоны 1200 х 1000
-                            <br>1 сорт</h5>
-                        <p class="card-text">
-                            <span>Размер:</span> 1200x1000 мм
-                            <span>Грузоподъемность:</span> до 2000 кг</p>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-center">
-                            <span>Цена:</span> 200р за шт.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top" src="img/poddony/poddoni_1200_800_sort1.JPG" alt="Поддоны 1200 х 800 1 сорт">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Поддоны 1200 х 800
-                            <br>1 сорт</h5>
-                        <p class="card-text">
-                            <span>Размер:</span> 1200x800 мм
-                            <span>Грузоподъемность:</span> до 1500 кг</p>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-center">
-                            <span>Цена:</span> 180р за шт.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/poddony/poddoni_1200_800_sort2.JPG" alt="Поддоны 1200 х 800 2 сорт">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Поддоны 1200 х 800
-                            <br>2 сорт</h5>
-                        <p class="card-text">
-                            <span>Размер:</span> 1200x800 мм
-                            <span>Грузоподъемность:</span> до 1500 кг</p>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-center">
-                            <span>Цена:</span> 160р за шт.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane fade" id="products-evroborta" role="tabpanel" aria-labelledby="products-evroborta-tab">
-            <div class="card-deck palletes-cards pt-1 mt-0">
-                <div class="card">
-                    <a href="/products/evroborty/index.html"><img class="card-img-top" src="img/poddony/eurobort.jpg" alt="Поддоны с евроклеймом 1 сорт"></a>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Евроборт</h5>
-                        <p class="card-text">
-                            <span>Размер:</span> 1200x800 мм
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-center">
-                            <span>Цена:</span> 350р за шт.</p>
-                    </div>
-                </div>
-                <div class="card invisible">
-                </div>
-                <div class="card invisible">
-                </div>
-                <div class="card invisible">
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <div id="productsContainer"></div>
 
     <div class="container contacts pt-5">
         <h4>Контактная информация</h4>
@@ -202,7 +106,14 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
     <!-- endbuild -->
+    <script>
+        $(document).ready(() => {
+            LoadProducts(document.getElementById("productsContainer"));
+        });
+    </script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
