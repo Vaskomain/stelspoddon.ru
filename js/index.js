@@ -55,9 +55,11 @@ productCardDeck = (products) => {
 
 productCardElement = (productData) => {
     return `                
-    <div class="card">
-        <img class="card-img-top" src="${productData.imageFile}" alt="${productData.name}">
-    <div class="card-body">
+    <div class="card">`
+    + (productData.link ? `<a href="${productData.link}"> ` : ``)
+        + `<img class="card-img-top" src="${productData.imageFile}" alt="${productData.name}">`
+    + (productData.link ? ` </a>` : ``)
+    +`<div class="card-body">
         <h5 class="card-title text-center">${productData.name}</h5>
         <p class="card-text">`
             + (productData.size ? `<span>Размер: </span>${productData.size}<br>` : ``)
