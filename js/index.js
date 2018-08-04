@@ -38,6 +38,16 @@ LoadSetOfProducts = (host,element,categoryId) => {
         });
 };
 
+LoadSingleProduct = (host,element,categoryId) => {
+    axios.get(host+'/poddony.json')
+        .then((response) => {
+            //Вывод самих продуктов
+            console.log(response.data.products.filter(productData => productData.category === categoryId));
+            element.innerHTML = productCardElement(response.data.products.filter(productData => productData.category === categoryId)[0],host);
+        });
+
+};
+
 
 productCardDeck = (products,singlePack,host) => {
     let hostname = (host ? host : '');
