@@ -1,24 +1,23 @@
-$main_background_color : #f8e193;
+$main_background_color: #f8e193;
 $main_text_color: white;
-
 .logo {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     display: block;
-    max-width:220px;
+    max-width: 220px;
     font-weight: bold;
     font-size: 120%;
     color: $main_text_color;
     span {
         display: block;
-        border-top: 1px solid; 
+        border-top: 1px solid;
         font-size: 50%;
     }
 }
 
 .header-contacts {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     display: block;
     max-width: 250px;
     min-width: 250px;
@@ -33,62 +32,78 @@ $main_text_color: white;
         font-size: 50%;
     }
 }
+
 .header {
     max-height: 6em;
-    
 }
 
 header {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cf0404+5,ff3019+75 */
-    background: #cf0404; /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  #cf0404 5%, #ff3019 75%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg,  #cf0404 5%,#ff3019 75%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg,  #cf0404 5%,#ff3019 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #cf0404;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #cf0404 5%, #ff3019 75%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #cf0404 5%, #ff3019 75%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #cf0404 5%, #ff3019 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
 
 @media (min-width: 576px) {
     /* CSS для: 576px <= ширины <= 767px */
     header {
         img {
-            width:70%;
+            width: 70%;
         }
         .header {
             max-height: 6em;
         }
-        
     }
 }
-   
-  /* md-устройства (больше или равно 768px) */
+
+/* md-устройства (больше или равно 768px) */
+
 @media (min-width: 768px) {
     /* CSS для: 768px <= ширины <= 991px */
     header {
         img {
-            width:80%;
+            width: 80%;
         }
         .header {
             max-height: 6em;
         }
     }
 }
-   
-  /* lg-устройства (больше или равно 992px) */
-  @media (min-width: 992px) {
+
+/* lg-устройства (больше или равно 992px) */
+
+@media (min-width: 992px) {
     /* CSS для: 992px <= ширины <= 1119px */
     header {
         img {
-            width:100%;
+            width: 100%;
         }
     }
-  }
-   
-  /* xl-устройства (больше или равно 1200px) */
-  @media (min-width: 1200px) {
-    /* CSS для: ширины >= 1200px */
-  }
+}
 
-.text-body{
+/* xl-устройства (больше или равно 1200px) */
+
+@media (min-width: 1200px) {
+    /* CSS для: ширины >= 1200px */
+}
+
+.single-product-card {
+    min-width: 100%;
+    @media (min-width: 576px) {
+        /* CSS для: 576px <= ширины <= 767px */
+        min-width: 25%;
+        max-width: 40%;
+    }
+}
+
+.text-body {
     margin-top: 3em;
 }
 
@@ -99,11 +114,16 @@ header {
 footer {
     min-height: 2em;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cf0404+5,ff3019+75 */
-    background: #cf0404; /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  #cf0404 5%, #ff3019 75%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg,  #cf0404 5%,#ff3019 75%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg,  #cf0404 5%,#ff3019 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #cf0404;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #cf0404 5%, #ff3019 75%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #cf0404 5%, #ff3019 75%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #cf0404 5%, #ff3019 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
 
 .brd {

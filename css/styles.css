@@ -40,7 +40,7 @@ header {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #cf0404 5%, #ff3019 75%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */ }
 
 @media (min-width: 576px) {
@@ -68,6 +68,14 @@ header {
 @media (min-width: 1200px) {
   /* CSS для: ширины >= 1200px */ }
 
+.single-product-card {
+  min-width: 100%; }
+  @media (min-width: 576px) {
+    .single-product-card {
+      /* CSS для: 576px <= ширины <= 767px */
+      min-width: 25%;
+      max-width: 40%; } }
+
 .text-body {
   margin-top: 3em; }
 
@@ -85,7 +93,7 @@ footer {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #cf0404 5%, #ff3019 75%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */ }
 
 .brd {
