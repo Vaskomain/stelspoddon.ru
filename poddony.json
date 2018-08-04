@@ -1,11 +1,29 @@
 {
     "categories": [
         {
+            "name": "Европоддоны",
+            "id": "evropoddony"
+        },
+        {
+            "name": "Облегченные поддоны",
+            "id": "oblegchennyie"
+        },
+        {
             "name": "Евроборта",
             "id": "evroborty"
         }
         ],
     "products": [
+        {
+            "name": "Поддоны с евроклеймом <br>высший сорт",
+            "category": "evropoddony",
+            "size": "1200x800 мм",
+            "imageFile": "img/poddony/poddoni_evro_super_small.jpg",
+            "leverage": " до 2500 кг",
+            "price": 320,
+            "hit": false,
+            "link": "poddony/evro/"
+        },
         {
             "name": "Поддоны с евроклеймом <br>1 сорт",
             "category": "evropoddony",
@@ -13,7 +31,18 @@
             "imageFile": "img/poddony/poddoni_evro_sort1_small.jpg",
             "leverage": " до 2500 кг",
             "price": 290,
-            "hit": true
+            "hit": true,
+            "link": "poddony/evro/"
+        },
+        {
+            "name": "Поддоны с евроклеймом <br>2 сорт",
+            "category": "evropoddony",
+            "size": "1200x800 мм",
+            "imageFile": "img/poddony/poddoni_evro_sort2_small.jpg",
+            "leverage": " до 2500 кг",
+            "price": 260,
+            "hit": false,
+            "link": "poddony/evro/"
         },
         {
             "name": "Семидосочные поддоны 1200 х 1000 <br>1 сорт",
@@ -43,11 +72,21 @@
             "hit": true
         },
         {
+            "name": "Поддоны ГОСТ 9078-84",
+            "category": "oblegchennyie",
+            "size": "1200x800 мм",
+            "imageFile": "img/poddony/obl2.jpg",
+            "leverage": " до 1500 кг",
+            "link": "/products/oblegchennyie/",
+            "price": 110,
+            "hit": false
+        },
+        {
             "name": "Евроборт",
             "category": "evroborty",
             "size": "1200x800 мм",
             "imageFile": "img/poddony/eurobort.jpg",
-            "link": "/products/evroborty/",
+            "link": "products/evroborty/",
             "price": 350,
             "hit": false
         }

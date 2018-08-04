@@ -56,6 +56,11 @@
             </div>
         </div>
     </header>
+
+    <h4 class="ml-5 my-3"> Поддоны с евроклеймом</h4>
+
+    <div id="productsContainer"  style="max-width: 75%;" class="mx-auto"></div>
+
     <div class="container text-body">
             <p>Главное, чем отличается европоддон от обычных поддонов в том, что первые изготовлены по международному стандарту под номером UIC 435-2, который был разработан Международным Союзом Железных дорог. В этом стандарте содержатся все особенности производства европоддонов, их размеры и размеры деталей, а также информация о породах древесины. Стандартные размеры европоддонов - 800х1200х145 мм. На них , согласно стандарту, должны присутствовать два клейма. EUR - удостоверяет то, что продукция была изготовлена по европейскому стандарту. EPAL – дает гарантию, что соблюдены все требования Европейской Паллетной Ассоциации, которая контролирует европейское производство деревянной тары и ее соответствие стандартам.</p>
 
@@ -72,6 +77,16 @@
             <a href="tel:+79257403030">8(925)740-30-30.</a>
         </p>
     </div>
+    <!-- build:js ../../js/main.js -->
+    <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <!-- endbuild -->
+    <script>
+        $(document).ready(() => {
+            LoadSetOfProducts(window.location.origin,document.getElementById("productsContainer"),"evropoddony");
+        });
+    </script>    
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
