@@ -25,7 +25,7 @@ LoadProducts = (host,element) => {
                 return `<div class="tab-pane fade" id="products-${categoryData.id}" role="tabpanel" aria-labelledby="products-${categoryData.id}-tab">`
                         + productCardDeck(response.data.products.filter(productData => productData.category === categoryData.id),false,host)
                         +`</div>`
-            });
+            }).join('');
             element.innerHTML = categoryPills + productDeck;
         });
 };

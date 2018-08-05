@@ -1,15 +1,27 @@
 {
     "categories": [
         {
-            "name": "Европоддоны",
+            "name": "Поддоны с евроклеймом",
             "id": "evropoddony"
         },
         {
-            "name": "Облегченные поддоны",
+            "name": "Облегченные",
             "id": "oblegchennyie"
         },
         {
-            "name": "Евроборта",
+            "name": "1200х800",
+            "id": "1200х800"
+        },
+        {
+            "name":"ГОСТ 9557-87",
+            "id":"gost9557-87"
+        },
+        {
+            "name":"Крашеные поддоны",
+            "id":"krashenyie"
+        },
+        {
+            "name": "Борта и крышки для поддонов",
             "id": "evroborty"
         }
         ],
@@ -46,7 +58,7 @@
         },
         {
             "name": "Семидосочные поддоны 1200 х 1000 <br>1 сорт",
-            "category": "fin_poddony",
+            "category": "1200х1000",
             "size": "1200x1000 мм",
             "imageFile": "img/poddony/1200_1000_s.jpg",
             "leverage": " до 2000 кг",
@@ -55,7 +67,7 @@
         },
         {
             "name": "Поддоны 1200 х 800<br>1 сорт",
-            "category": "1200_800",
+            "category": "1200х800",
             "size": "1200x800 мм",
             "imageFile": "img/poddony/poddoni_1200_800_sort1.JPG",
             "leverage": " до 1500 кг",
@@ -64,7 +76,7 @@
         },
         {
             "name": "Поддоны 1200 х 800<br>2 сорт",
-            "category": "1200_800",
+            "category": "1200х800",
             "size": "1200x800 мм",
             "imageFile": "img/poddony/poddoni_1200_800_sort2.JPG",
             "leverage": " до 1500 кг",
@@ -82,12 +94,84 @@
             "hit": false
         },
         {
+            "name": "Поддоны 1200х1000 финские",
+            "category": "1200х1000",
+            "size": "1200x1000 мм",
+            "imageFile": "img/poddony/1200_1000_fin_w.JPG",
+            "leverage": " 2500 и больше кг",
+            "price": 220,
+            "hit": false
+        },
+        {
+            "name": "Поддоны 1200х1000 темные",
+            "category": "1200х1000",
+            "size": "1200x1000 мм",
+            "imageFile": "img/poddony/1200_1000_tem_w.JPG",
+            "leverage": " 2000 кг",
+            "price": 180,
+            "hit": false
+        },
+        {
+            "name": "Поддоны 1200х1000 облегченные",
+            "category": "1200х1000",
+            "size": "1200x1000 мм",
+            "imageFile": "img/poddony/1200_1000_obl_obv_w.JPG",
+            "leverage": " 1000 кг",
+            "price": 140,
+            "hit": false
+        },
+        {
+            "name": "Поддоны Гост 9557-87 сорт 1",
+            "category": "gost9557-87",
+            "size": "1200x800 мм",
+            "imageFile": "img/poddony/9557_1.JPG",
+            "leverage": " 2500 кг",
+            "price": 270,
+            "hit": false
+        },
+        {
+            "name": "Поддоны Гост 9557-87 сорт 2",
+            "category": "gost9557-87",
+            "size": "1200x800 мм",
+            "imageFile": "img/poddony/9557_2.JPG",
+            "leverage": " 2000 кг",
+            "price": 220,
+            "hit": false
+        },
+        {
+            "name": "Поддоны крашенные 1200х1000",
+            "category": "krashenyie",
+            "size": "1200x1000 мм",
+            "imageFile": "img/poddony/krawennie_1200_1000.JPG",
+            "leverage": " 2000 кг",
+            "price": 180,
+            "hit": false
+        },
+        {
+            "name": "Поддоны крашенные Гост 9557-87",
+            "category": "krashenyie",
+            "size": "1200x800 мм",
+            "imageFile": "img/poddony/krawennie_1200_800.JPG",
+            "leverage": " 2500 кг",
+            "price": 200,
+            "hit": false
+        },
+        {
             "name": "Евроборт",
             "category": "evroborty",
             "size": "1200x800 мм",
             "imageFile": "img/poddony/eurobort.jpg",
             "link": "products/evroborty/",
             "price": 350,
+            "hit": false
+        },
+        {
+            "name": "Крышки для поддонов",
+            "category": "evroborty",
+            "size": "1200x800 мм",
+            "imageFile": "img/poddony/0721.jpg",
+            "link": "products/evroborty/",
+            "price": 120,
             "hit": false
         }
 
