@@ -90,7 +90,7 @@ productCardElement = (productData,host) => {
     +`</p> </div>
     <div class="card-footer">
         <p class="text-center">
-            <span>Цена:</span> ${productData.price}р за шт.</p>
+            <span>Цена:</span> ${productData.price}р за шт. <br> (без НДС)</p>
     </div>
 </div>
 
