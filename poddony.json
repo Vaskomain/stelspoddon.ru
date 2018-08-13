@@ -63,7 +63,7 @@
             "imageFile": "img/poddony/1200_1000_s.jpg",
             "leverage": " до 2000 кг",
             "price": 200,
-            "hit": true
+            "hit": false
         },
         {
             "name": "Поддоны 1200 х 800<br>1 сорт",
@@ -84,14 +84,14 @@
             "hit": true
         },
         {
-            "name": "Поддоны ГОСТ 9078-84",
+            "name": "Поддоны облегченные ГОСТ 9078-84",
             "category": "oblegchennyie",
             "size": "1200x800 мм",
             "imageFile": "img/poddony/obl2.jpg",
             "leverage": " до 1500 кг",
             "link": "/products/oblegchennyie/",
-            "price": 110,
-            "hit": false
+            "price": 140,
+            "hit": true
         },
         {
             "name": "Поддоны 1200х1000 финские",
@@ -170,7 +170,7 @@
             "category": "evroborty",
             "size": "1200x800 мм",
             "imageFile": "img/poddony/0721.jpg",
-            "link": "products/evroborty/",
+            "link": "products/kryishki-dlya-poddonov/",
             "price": 120,
             "hit": false
         }

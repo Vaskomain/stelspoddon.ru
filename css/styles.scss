@@ -126,6 +126,55 @@ footer {
     /* IE6-9 fallback on horizontal gradient */
 }
 
+.articles-border {
+    list-style: none;
+    padding: 0;
+    li {
+        //font-family: "Trebuchet MS", "Lucida Sans";
+        padding: 7px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border-left: 10px solid #f05d22;
+        box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, .1), -2px -2px 5px 0 rgba(0, 0, 0, .1), 2px 2px 5px 0 rgba(0, 0, 0, .1), -2px 2px 5px 0 rgba(0, 0, 0, .1);
+        font-size: 100%;
+        letter-spacing: 1px;
+        transition: 0.3s all linear;
+        a {
+            color: black;
+        }
+    }
+    li:nth-child(5n+1) {
+        border-color: #8bc63e;
+    }
+    li:nth-child(5n+2) {
+        border-color: #fcba30;
+    }
+    li:nth-child(5n+3) {
+        border-color: #1ccfc9;
+    }
+    li:nth-child(5n+4) {
+        border-color: #493224;
+    }
+    li:hover {
+        border-left: 10px solid transparent;
+    }
+    li:nth-child(5n):hover {
+        border-right: 10px solid #f05d22;
+    }
+    li:nth-child(5n+1):hover {
+        border-right: 10px solid #8bc63e;
+    }
+    li:nth-child(5n+2):hover {
+        border-right: 10px solid #fcba30;
+    }
+    li:nth-child(5n+3):hover {
+        border-right: 10px solid #1ccfc9;
+    }
+    li:nth-child(5n+4):hover {
+        border-right: 10px solid #493224;
+    }
+}
+
 .brd {
     border: 2px solid black;
 }

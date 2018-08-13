@@ -38,12 +38,12 @@ LoadSetOfProducts = (host,element,categoryId) => {
         });
 };
 
-LoadSingleProduct = (host,element,categoryId) => {
+LoadSingleProduct = (host,element,categoryId,num = 0) => {
     axios.get(host+'/poddony.json')
         .then((response) => {
             //Вывод самих продуктов
             console.log(response.data.products.filter(productData => productData.category === categoryId));
-            element.innerHTML = productCardElement(response.data.products.filter(productData => productData.category === categoryId)[0],host);
+            element.innerHTML = productCardElement(response.data.products.filter(productData => productData.category === categoryId)[num],host);
         });
 
 };
