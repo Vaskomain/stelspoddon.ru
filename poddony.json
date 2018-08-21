@@ -124,7 +124,7 @@
             "name": "Поддоны Гост 9557-87 сорт 1",
             "category": "gost9557-87",
             "size": "1200x800 мм",
-            "imageFile": "img/poddony/9557_1.JPG",
+            "imageFile": "img/poddony/9557_1.jpg",
             "leverage": " 2500 кг",
             "price": 270,
             "hit": false
@@ -133,7 +133,7 @@
             "name": "Поддоны Гост 9557-87 сорт 2",
             "category": "gost9557-87",
             "size": "1200x800 мм",
-            "imageFile": "img/poddony/9557_2.JPG",
+            "imageFile": "img/poddony/9557_2.jpg",
             "leverage": " 2000 кг",
             "price": 220,
             "hit": false
@@ -151,7 +151,7 @@
             "name": "Поддоны крашенные Гост 9557-87",
             "category": "krashenyie",
             "size": "1200x800 мм",
-            "imageFile": "img/poddony/krawennie_1200_800.JPG",
+            "imageFile": "img/poddony/krawennie_1200_800.jpg",
             "leverage": " 2500 кг",
             "price": 200,
             "hit": false
