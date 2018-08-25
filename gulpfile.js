@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     flatmap = require('gulp-flatmap'),
     htmlmin = require('gulp-htmlmin');
 
+    const babel = require('gulp-babel');
     var merge = require('merge-stream');
 
     var fs = require('fs');
@@ -25,8 +26,20 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./css'));
 });
 
+gulp.task('babel', function () {
+    return gulp.src('./js/*.jsx')
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(gulp.dest('./js'));
+});
+
 gulp.task('sass:watch', function () {
     gulp.watch('./css/*.scss', ['sass']);
+});
+
+gulp.task('js:watch', function () {
+    gulp.watch('./js/*.jsx', ['babel']);
 });
 
 // Clean
@@ -182,5 +195,5 @@ gulp.task('browser-sync', function () {
 
 // Default task
 gulp.task('default', ['browser-sync'], function () {
-    gulp.start('sass:watch');
+    gulp.start('sass:watch','js:watch');
 });
