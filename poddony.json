@@ -13,6 +13,10 @@
             "id": "1200х800"
         },
         {
+            "name": "1200х1000",
+            "id": "1200х1000"
+        },
+        {
             "name":"ГОСТ 9557-87",
             "id":"gost9557-87"
         },
@@ -24,8 +28,17 @@
             "name": "Борта и крышки для поддонов",
             "id": "evroborty"
         }
-        ],
+    ],
     "products": [
+        {
+            "name": "Поддоны 1200х1000 темные",
+            "category": "1200х1000",
+            "size": "1200x1000 мм",
+            "imageFile": "img/poddony/1200_1000_2sort.jpg",
+            "leverage": " 2500 кг",
+            "price": 180,
+            "hit": true
+        },
         {
             "name": "Поддоны с евроклеймом <br>высший сорт",
             "category": "evropoddony",
@@ -60,7 +73,7 @@
             "name": "Семидосочные поддоны 1200 х 1000 <br>1 сорт",
             "category": "1200х1000",
             "size": "1200x1000 мм",
-            "imageFile": "img/poddony/1200_1000_s.jpg",
+            "imageFile": "img/poddony/1200_1000_1sort.jpg",
             "leverage": " до 2000 кг",
             "price": 200,
             "hit": false
@@ -81,35 +94,17 @@
             "imageFile": "img/poddony/poddoni_1200_800_sort2.JPG",
             "leverage": " до 1500 кг",
             "price": 160,
-            "hit": true
+            "hit": false
         },
         {
             "name": "Поддоны облегченные ГОСТ 9078-84",
             "category": "oblegchennyie",
             "size": "1200x800 мм",
-            "imageFile": "img/poddony/obl2.jpg",
+            "imageFile": "img/poddony/obl1.jpg",
             "leverage": " до 1500 кг",
             "link": "/products/oblegchennyie/",
             "price": 140,
             "hit": true
-        },
-        {
-            "name": "Поддоны 1200х1000 финские",
-            "category": "1200х1000",
-            "size": "1200x1000 мм",
-            "imageFile": "img/poddony/1200_1000_fin_w.JPG",
-            "leverage": " 2500 и больше кг",
-            "price": 220,
-            "hit": false
-        },
-        {
-            "name": "Поддоны 1200х1000 темные",
-            "category": "1200х1000",
-            "size": "1200x1000 мм",
-            "imageFile": "img/poddony/1200_1000_tem_w.JPG",
-            "leverage": " 2000 кг",
-            "price": 180,
-            "hit": false
         },
         {
             "name": "Поддоны 1200х1000 облегченные",
@@ -118,6 +113,15 @@
             "imageFile": "img/poddony/1200_1000_obl_obv_w.JPG",
             "leverage": " 1000 кг",
             "price": 140,
+            "hit": false
+        },
+        {
+            "name": "Поддоны 1200х1000 финские",
+            "category": "1200х1000",
+            "size": "1200x1000 мм",
+            "imageFile": "img/poddony/1200_1000_fin_w.JPG",
+            "leverage": " 2500 и больше кг",
+            "price": 300,
             "hit": false
         },
         {
@@ -142,7 +146,7 @@
             "name": "Поддоны крашенные 1200х1000",
             "category": "krashenyie",
             "size": "1200x1000 мм",
-            "imageFile": "img/poddony/krawennie_1200_1000.JPG",
+            "imageFile": "img/poddony/1200_1000_kras.jpg",
             "leverage": " 2000 кг",
             "price": 180,
             "hit": false
