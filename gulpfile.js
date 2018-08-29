@@ -12,6 +12,9 @@ var gulp = require('gulp'),
     flatmap = require('gulp-flatmap'),
     htmlmin = require('gulp-htmlmin');
 
+    var sitemap = require('gulp-sitemap');
+    var gulpSequence = require('gulp-sequence');
+
     const babel = require('gulp-babel');
     var merge = require('merge-stream');
 
@@ -173,9 +176,21 @@ gulp.task('usemin', function () {
     return merge(dir1,dir2);
 });
 
-gulp.task('build', ['clean'], function () {
-    gulp.start('copyfonts', 'imagemin', 'usemin_all');
+gulp.task('sitemap', function () {
+    gulp.src('dist/**/*.html', {
+            read: false
+        })
+        .pipe(sitemap({
+            siteUrl: 'http://www.stelspoddon.ru'
+        }))
+        .pipe(gulp.dest('./dist'));
 });
+
+//gulp.task('build', ['clean'], function () {
+//    gulp.start('copyfonts', 'imagemin', 'usemin_all');
+//});
+
+gulp.task('build',gulpSequence('clean', ['copyfonts', 'imagemin', 'usemin_all'], 'sitemap'));
 
 gulp.task('browser-sync', function () {
     var files = [
