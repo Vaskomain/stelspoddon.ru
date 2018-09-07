@@ -71,17 +71,16 @@
             </div>
         </div>
     </header>
+
+    <h4 class="ml-5 my-3"> Поддоны 1200 x 1000</h4>
+
+    <div id="productsContainer" style="max-width: 90%;" class="mx-auto"></div>
+
     <div class="container text-body">
-        <div class="media mb-5">
-            <img class="mr-3 img-fluid" style="max-width:30%;" src="../../img/poddony/1200_1000_s.jpg" alt="Поддоны 1200х1000">
-            <div class="media-body">
-                <h5 class="mt-0">Поддоны 1200 х 1000</h5>
-                <p>Этот размер поддонов б/у часто используется для перевозки крупногабаритных грузов, т.к. они имеют
+        <p>Этот размер поддонов б/у часто используется для перевозки крупногабаритных грузов, т.к. они имеют
                     увеличенный размер. Такие поддоны часто называют финский поддон.   Это очень вместительные поддоны
                     и с ними удобно работать с помощью механического погрузчика. Мы предлагаем сейчас 4 основных вида
                     таких поддонов, отличающихся, как по грузоподъемности, так и по цене.</p>
-            </div>
-        </div>
 
         <p>Купить поддоны можно, написав на
             <a href="mailto:stelspoddon@yandex.ru" onclick="yaCounter26301540.reachGoal('EMAIL_US'); return true;">stelspoddon@yandex.ru</a>
@@ -89,6 +88,17 @@
             <a href="tel:+79257403030" onclick="yaCounter26301540.reachGoal('CALL_US'); return true;">8(925)740-30-30.</a>
         </p>
     </div>
+    <!-- build:js ../../js/main.js -->
+    <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <!-- endbuild -->
+    <script>
+            $(document).ready(() => {
+                LoadSetOfProducts(window.location.origin, document.getElementById("productsContainer"),
+                    "1200х1000");
+            });
+    </script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {

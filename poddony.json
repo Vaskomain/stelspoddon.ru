@@ -37,7 +37,8 @@
             "imageFile": "img/poddony/1200_1000_2sort.jpg",
             "leverage": " 2500 кг",
             "price": 180,
-            "hit": true
+            "hit": true,
+            "link": "/products/1200x1000/"
         },
         {
             "name": "Поддоны с евроклеймом <br>высший сорт",
@@ -45,7 +46,7 @@
             "size": "1200x800 мм",
             "imageFile": "img/poddony/poddoni_evro_super_small.jpg",
             "leverage": " до 2500 кг",
-            "price": 320,
+            "price": 350,
             "hit": false,
             "link": "poddony/evro/"
         },
@@ -55,7 +56,7 @@
             "size": "1200x800 мм",
             "imageFile": "img/poddony/poddoni_evro_sort1_small.jpg",
             "leverage": " до 2500 кг",
-            "price": 290,
+            "price": 300,
             "hit": true,
             "link": "poddony/evro/"
         },
@@ -76,7 +77,8 @@
             "imageFile": "img/poddony/1200_1000_1sort.jpg",
             "leverage": " до 2000 кг",
             "price": 200,
-            "hit": false
+            "hit": false,
+            "link": "/products/1200x1000/"
         },
         {
             "name": "Поддоны 1200 х 800<br>1 сорт",
@@ -84,7 +86,7 @@
             "size": "1200x800 мм",
             "imageFile": "img/poddony/poddoni_1200_800_sort1.JPG",
             "leverage": " до 1500 кг",
-            "price": 180,
+            "price": 190,
             "hit": true
         },
         {
@@ -113,7 +115,8 @@
             "imageFile": "img/poddony/1200_1000_obl_obv_w.JPG",
             "leverage": " 1000 кг",
             "price": 140,
-            "hit": false
+            "hit": false,
+            "link": "/products/1200x1000/"
         },
         {
             "name": "Поддоны 1200х1000 финские",
@@ -122,7 +125,8 @@
             "imageFile": "img/poddony/1200_1000_fin_w.JPG",
             "leverage": " 2500 и больше кг",
             "price": 300,
-            "hit": false
+            "hit": false,
+            "link": "/products/1200x1000/"
         },
         {
             "name": "Поддоны Гост 9557-87 сорт 1",
