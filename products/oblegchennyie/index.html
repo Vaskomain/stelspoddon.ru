@@ -72,13 +72,23 @@
         </div>
     </header>
     <div class="container text-body">
-        <p>На сегодняшний день этот вид продукции (хлипкие поддоны) пользуется большим спросом покупателей. Это самый
-            дешевые
-            поддоны из всех представленных паллет в прайсе.</p>
+        <div class="media mb-5 flex-wrap">
+            <div id="obl_poddon" class="mr-5 single-product-card">
+            </div>
+            <div class="media-body">
+                <h5 class="mt-0">Облегченные поддоны</h5>
+                <p>На сегодняшний день этот вид продукции (хлипкие поддоны) пользуется большим спросом покупателей. Это
+                    самые
+                    дешевые
+                    поддоны из всех представленных паллет в прайсе.</p>
 
-        <p>Облегченные поддоны служат для однократного складирования товаров или как не возвратные поддоны. Этот вид
-            поддонов
-            бу бывает двух размеров 1200х800 и 1200х1000.</p>
+                <p>Облегченные поддоны служат для однократного складирования товаров или как не возвратные поддоны.
+                    Этот вид
+                    поддонов
+                    бу бывает двух размеров 1200х800 и 1200х1000.</p>
+            </div>
+        </div>
+
 
         <p>Купить поддоны можно, написав на
             <a href="mailto:stelspoddon@yandex.ru" onclick="yaCounter26301540.reachGoal('EMAIL_US'); return true;">stelspoddon@yandex.ru</a>
@@ -86,6 +96,17 @@
             <a href="tel:+79257403030" onclick="yaCounter26301540.reachGoal('CALL_US'); return true;">8(925)740-30-30.</a>
         </p>
     </div>
+    <!-- build:js ../../js/main.js -->
+    <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <!-- endbuild -->
+    <script>
+        $(document).ready(() => {
+            LoadSingleProduct(window.location.origin, document.getElementById("obl_poddon"), "oblegchennyie",
+                0);
+        });
+    </script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
