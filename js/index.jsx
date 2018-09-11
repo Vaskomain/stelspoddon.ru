@@ -6,11 +6,11 @@ const LoadProducts = (host,element) => {
             let categoryPills = 
             `<ul class="nav nav-pills ml-5 pt-3" id="products-pills" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="products-hits-tab" data-toggle="pill" href="#products-hits" role="tab" aria-controls="products-hits" aria-selected="true">Хиты продаж</a>
+                    <a class="nav-link product-pill active" id="products-hits-tab" data-toggle="pill" href="#products-hits" role="tab" aria-controls="products-hits" aria-selected="true">Хиты продаж</a>
                 </li>`
             + response.data.categories.map((categoryData,index) => {
                 return `  <li class="nav-item">
-                        <a class="nav-link" id="products-${categoryData.id}-tab" data-toggle="pill" href="#products-${categoryData.id}" role="tab" aria-controls="products-${categoryData.id}"
+                        <a class="nav-link product-pill" id="products-${categoryData.id}-tab" data-toggle="pill" href="#products-${categoryData.id}" role="tab" aria-controls="products-${categoryData.id}"
                             aria-selected="false">${categoryData.name}</a>
                     </li>`}).join('')
             + `</ul>`;

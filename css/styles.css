@@ -88,19 +88,27 @@ header {
   @media (min-width: 576px) {
     .text-body {
       margin-top: 3em; } }
-  .text-body h5 {
+  .text-body h1 {
+    font-size: 1.1rem; }
+    @media (min-width: 576px) {
+      .text-body h1 {
+        font-size: 1.3rem; } }
+  .text-body h2 {
     font-size: 1rem; }
     @media (min-width: 576px) {
-      .text-body h5 {
+      .text-body h2 {
         font-size: 1.2rem; } }
-  .text-body h6 {
+  .text-body h3 {
     font-size: 0.8rem; }
     @media (min-width: 576px) {
-      .text-body h6 {
+      .text-body h3 {
         font-size: 1rem; } }
 
 .palletes-cards {
   margin: 2em 2em 1em 2em; }
+
+.product-pill {
+  font-size: 90%; }
 
 footer {
   min-height: 2em;
