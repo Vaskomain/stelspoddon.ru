@@ -95,14 +95,24 @@
             "size": "1200x800 мм",
             "imageFile": "img/poddony/poddoni_1200_800_sort2.JPG",
             "leverage": " до 1500 кг",
-            "price": 160,
+            "price": 170,
             "hit": false
         },
         {
-            "name": "Поддоны облегченные ГОСТ 9078-84",
+            "name": "Поддоны облегченные ГОСТ 9078-84<br>1 сорт",
             "category": "oblegchennyie",
             "size": "1200x800 мм",
             "imageFile": "img/poddony/obl1.jpg",
+            "leverage": " до 700 кг",
+            "link": "/products/oblegchennyie/",
+            "price": 150,
+            "hit": true
+        },
+        {
+            "name": "Поддоны облегченные ГОСТ 9078-84<br>2 сорт",
+            "category": "oblegchennyie",
+            "size": "1200x800 мм",
+            "imageFile": "img/poddony/obl2.jpg",
             "leverage": " до 700 кг",
             "link": "/products/oblegchennyie/",
             "price": 140,
